@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <style>
+    .Large
+    {
+      font-size: 10pt;
+      height: 30px;
+    }
+    </style>
+
+    <title>Sentiment Analysis</title>
+  </head>
+  <body>
+   <body>
+
+    
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Text Analysis</h1>
+          <p class="lead text-muted">Enter The Text To Check The Polarity</p>
+
+          <form action='/predict' method="POST">
+              
+            <p>
+            <input class="form-input" type="text" name="text" placeholder="type text here" size="50"><br>
+            
+            <button type="submit" class="btn btn-primary my-2">submit</button>
+            <div class="results">
+            <p class='result-p'> {{ result_review }} </p>
+            </div> 
+             
+            </p>
+          </form>
+        </div>
+      </section>
+
+      
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">NLP</a>
+        </p>
+        <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="../../">Visit the homepage</a> or read our <a href="../../getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer>
+</html>
